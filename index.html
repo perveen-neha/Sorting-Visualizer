@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4d52623277.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <h1>Sorting Algorithm Visualizer</h1>
+    <nav class="navbar">
+        <div class="main-nav-div">
+            <div class="array">
+                <button class="new-array" onclick="createArray()">
+                    New Array
+                </button>
+            </div>
+            <div class="array-size">
+                <select id="arraySize" name="size" >
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50" selected>50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <div>
+                <span>
+                    <select class="speed" name="speed" id="sorting-speed">
+                        <option value="0.25">0.25x</option>
+                        <option value="0.50">0.50x</option>
+                        <option value="1.00" selected>1.00x</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.50">1.50x</option>
+                        <option value="1.75">1.75x</option>
+                        <option value="2.00">2.00x</option>
+                    </select>
+                </span>
+            </div>
+            <div class="algorithms">
+                <span class="algorithms">
+                    <select name="sorting-algorithm" id="sort-algo">
+                        <option disabled selected>Sort Algo</option>
+                        <option value="BubbleSort">Bubble Sort</option>
+                        <option value="InsertionSort">Insertion Sort</option>
+                        <option value="SelectionSort">Selection Sort</option>
+                        <option value="MergeSort">Merge Sort</option>
+                    </select>
+                </span>
+            </div>
+        </div>
+    </nav>
+</header>
+<hr>
+<div class="center">
+    <div id="array-bars"  class="flex-container"></div>
+</div>
+<footer class="footer">
+    <div>
+    <p>Made with <i class="fa fa-heart"> by Neha</i></p>
+    
+    <p class="connect-links">
+        <a href="https://www.linkedin.com/in/perveen-neha-74a6831ba/" target="_blank" class="link">
+            <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a href="https://github.com/perveen-neha" target="_blank" class="link">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="https://twitter.com/neha_mhd" target="_blank" class="link"> 
+            <i class="fa fa-twitter"></i>
+        </a>
+    </p>
+</div>
+
+</footer>
+<body>
+    <script src="./javascriptFiles/insertionSort.js"></script>
+    <script src="./javascriptFiles/bubbleSort.js"></script>
+    <script src="./javascriptFiles/selectionSort.js"></script>
+    <script src="./javascriptFiles/mergesort.js"></script>
+    <script src="./javascriptFiles/sort.js"></script>
+</body>
+</html>
